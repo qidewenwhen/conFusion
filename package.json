@@ -1,19 +1,27 @@
 {
   "name": "confusion",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This is a website for Ristorante Con Fusion",
-  "main": "index.html",
+  "main": "aboutus.html",
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
-  "author": "",
+  "author": "Dewen Qi",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.2.2"
+    "lite-server": "^2.3.0"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qidewenwhen/conFusion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qidewenwhen/conFusion/issues"
+  },
+  "homepage": "https://github.com/qidewenwhen/conFusion#readme"
 }
