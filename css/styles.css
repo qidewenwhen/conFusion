@@ -7,7 +7,7 @@
 .row-content {
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
+    border-bottom: 1px ridge #e3e3e3;
     min-height: 400px;
 }
 
