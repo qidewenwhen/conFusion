@@ -35,12 +35,15 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-8">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col col-sm align-self-center" >
+                <div class="col-12 col-sm-3 align-self-center" >
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a role="button" class="btn btn-warning btn-block btn-sm" href="#ReservationCard">Reserve</a>
                 </div>
             </div>
         </div>
@@ -65,12 +68,18 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-last">
+            <div class="col-sm-4 col-md-3 flex-first">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col-sm col-md flex-first">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col-sm col-md flex-last">
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex img-thumbnail align-self-center"
+                        src="img/buffet.png" alt="Weekend Grand Buffet">
+                </div>
             </div>
         </div>
 
@@ -88,6 +97,89 @@
                         <p class="hidden-xs-down">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>           
                     </div>
                 </div> 
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center justify-content-center">
+            <div class="col-12 col-sm-8">
+                <div class="card" id="ReservationCard">
+                    <h3 class="card-header card-inverse card-warning text-white">Reserve a Table</h3>
+                    <div class="card-block">
+                        <dl class="row">
+                            <dt class="col-12 col-sm-2">Number of Guests</dt>
+                            <dd class="col-12 col-sm-10">
+                                <form>
+                                    <div class="form-group row">
+                                        <div class="form-check col-12 col-sm-9 ml-sm-4">
+                                            <label class="form-check-label mr-sm-4">
+                                                <input class="form-check-input" type="radio" 
+                                                    name="exampleRadios" id="Radios1" value="option1" >
+                                                    1
+                                            </label>
+                                            <label class="form-check-label mr-sm-4">
+                                                <input class="form-check-input" type="radio" 
+                                                    name="exampleRadios" id="Radios2" value="option2" >
+                                                    2
+                                            </label>
+                                            <label class="form-check-label mr-sm-4">
+                                                <input class="form-check-input" type="radio" 
+                                                    name="exampleRadios" id="Radios3" value="option3" >
+                                                    3
+                                            </label>
+                                            <label class="form-check-label mr-sm-4">
+                                                <input class="form-check-input" type="radio" 
+                                                    name="exampleRadios" id="Radios4" value="option4" >
+                                                    4
+                                            </label>
+                                            <label class="form-check-label mr-sm-4">
+                                                <input class="form-check-input" type="radio" 
+                                                    name="exampleRadios" id="Radios5" value="option5" >
+                                                    5    
+                                            </label>
+                                            <label class="form-check-label mr-sm-4">
+                                                <input class="form-check-input" type="radio" 
+                                                    name="exampleRadios" id="Radios6" value="option6" >
+                                                    6    
+                                            </label>
+                                        </div>                                                                                                                                      
+                                    </div>
+                                </form>
+                            </dd>
+                            <dt class="col-12 col-sm-2 mt-sm-5">Data and Time</dt>
+                            <dd class="col-12 col-sm-10 mt-sm-5">
+                                <form>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-sm-5">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-calendar fa-lg"></i>   
+                                                </div>
+                                                <input type="text" class="form-control" onfocus="(this.type='date')" id="date" name="date"
+                                                    placeholder="Date">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-5">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-clock-o fa-lg"></i>     
+                                                </div>
+                                                <input type="text" class="form-control" onfocus="(this.type='time')" id="time" name="time"
+                                                    placeholder="Time">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dd> 
+                        </dl>
+                        <div class="row">
+                            <div class="col-12 offset-sm-2">
+                                <button type="submit" class="btn btn-primary">
+                                    Reserve
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
