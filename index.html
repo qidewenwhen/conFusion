@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="botton" data-toggle="collapse" data-target="#Navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>            
@@ -63,7 +63,7 @@
                                     <input class="form-check-input" type="checkbox"> Remember me
                                 </label>
                             </div>
-                        </form>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
@@ -87,7 +87,7 @@
                         data-toggle="tooltip" data-html="true"
                         title="Or Call us at<br><strong>+852 12345678</strong>"
                         data-placement="bottom" 
-                        href="#ReservationCard">Reserve</a>
+                        href="#ReservationCard">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -194,49 +194,57 @@
                 <div class="card" id="ReservationCard">
                     <h3 class="card-header card-inverse card-warning text-white">Reserve a Table</h3>
                     <div class="card-block">
-                        <dl class="row">
-                            <dt class="col-12 col-sm-2">Number of Guests</dt>
-                            <dd class="col-12 col-sm-10">
-                                <form>
+                        <form>
+                            <dl class="row">
+                                <dt class="col-12 col-sm-2">Number of Guests</dt>
+                                <dd class="col-12 col-sm-10">                               
                                     <div class="form-group row">
-                                        <div class="form-check col-12 col-sm-9 ml-sm-4">
-                                            <label class="form-check-label mr-sm-4">
+                                        <div class="form-check form-check-inline ml-3">
+                                            <label class="form-check-label">
                                                 <input class="form-check-input" type="radio" 
-                                                    name="exampleRadios" id="Radios1" value="option1" >
+                                                    name="inlineRadioOptions" id="Radios1" value="option1" >
                                                     1
                                             </label>
-                                            <label class="form-check-label mr-sm-4">
+                                        </div>
+                                        <div class="form-check form-check-inline ml-sm-4">
+                                            <label class="form-check-label">
                                                 <input class="form-check-input" type="radio" 
-                                                    name="exampleRadios" id="Radios2" value="option2" >
+                                                    name="inlineRadioOptions" id="Radios2" value="option2" >
                                                     2
                                             </label>
-                                            <label class="form-check-label mr-sm-4">
+                                        </div>
+                                        <div class="form-check form-check-inline ml-sm-4">
+                                            <label class="form-check-label">
                                                 <input class="form-check-input" type="radio" 
-                                                    name="exampleRadios" id="Radios3" value="option3" >
+                                                    name="inlineRadioOptions" id="Radios3" value="option3" >
                                                     3
                                             </label>
-                                            <label class="form-check-label mr-sm-4">
+                                        </div>
+                                        <div class="form-check form-check-inline ml-sm-4">
+                                            <label class="form-check-label">
                                                 <input class="form-check-input" type="radio" 
-                                                    name="exampleRadios" id="Radios4" value="option4" >
+                                                    name="inlineRadioOptions" id="Radios4" value="option4" >
                                                     4
                                             </label>
-                                            <label class="form-check-label mr-sm-4">
+                                        </div>
+                                        <div class="form-check form-check-inline ml-sm-4">
+                                            <label class="form-check-label">
                                                 <input class="form-check-input" type="radio" 
-                                                    name="exampleRadios" id="Radios5" value="option5" >
+                                                    name="inlineRadioOptions" id="Radios5" value="option5" >
                                                     5    
                                             </label>
-                                            <label class="form-check-label mr-sm-4">
+                                        </div>
+                                        <div class="form-check form-check-inline ml-sm-4">
+                                            <label class="form-check-label">
                                                 <input class="form-check-input" type="radio" 
-                                                    name="exampleRadios" id="Radios6" value="option6" >
+                                                    name="inlineRadioOptions" id="Radios6" value="option6" >
                                                     6    
                                             </label>
                                         </div>                                                                                                                                      
-                                    </div>
-                                </form>
-                            </dd>
-                            <dt class="col-12 col-sm-2 mt-sm-5">Data and Time</dt>
-                            <dd class="col-12 col-sm-10 mt-sm-5">
-                                <form>
+                                    </div>                                  
+                                </dd>
+                                <dt class="col-12 col-sm-2 mt-sm-3">Date and Time</dt>
+                                <dd class="col-12 col-sm-10 mt-sm-3">                              
                                     <div class="form-group row">
                                         <div class="col-12 col-sm-5">
                                             <div class="input-group">
@@ -259,16 +267,16 @@
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-                            </dd> 
-                        </dl>
-                        <div class="row">
-                            <div class="col-12 offset-sm-2">
-                                <button type="submit" class="btn btn-primary">
-                                    Reserve
-                                </button>
+                                </dd> 
+                            </dl>
+                            <div class="form-group row">
+                                <div class="col-12 offset-sm-2">
+                                    <button type="submit" class="btn btn-primary">
+                                        Reserve
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
