@@ -279,7 +279,7 @@
                         <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                         <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
-                    <img class="d-flex img-thumbnail align-self-center"
+                    <img class="d-flex ml-3 img-thumbnail align-self-center"
                         src="img/buffet.png" alt="Weekend Grand Buffet">
                 </div>
             </div>
@@ -348,24 +348,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel({interval:2000});
-            $("#carousel-button").click(function(){
-                if($("#carousel-button").children("span").hasClass('fa-pause')){
-                    $("#mycarousel").carousel('pause');
-                    $("#carousel-button").children("span").removeClass('fa-pause');
-                    $("#carousel-button").children("span").addClass('fa-play');
-                }
-               else if($("#carousel-button").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carousel-button").children("span").removeClass('fa-play');
-                    $("#carousel-button").children("span").addClass('fa-pause');
-               }
-            });
-
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
